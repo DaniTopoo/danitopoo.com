@@ -1,10 +1,6 @@
 <template>
-  <div class="flex flex-col md:flex-row justify-between items-center p-4 md:p-12">
+  <div class="flex flex-col md:flex-row justify-evenly items-center p-4 md:p-12 slide-in">
     <div class="flex flex-col md:flex-row items-center gap-6">
-      <img 
-        class="w-24 h-24 md:w-48 md:h-48"
-        src="https://i.pinimg.com/236x/1c/34/f5/1c34f56f74d75590863dd8a3ae8d15a4.jpg" 
-        alt="Imagen">
       <div class="flex flex-col items-center md:items-start text-center md:text-left">
         <span class="text-principal text-lg md:text-2xl">Hi, I'm</span>
         <span class="font-bold text-lg md:text-2xl">DaniTopoo</span>
@@ -14,13 +10,19 @@
             target="_blank"
             class="bg-black border border-black p-2 md:p-6 rounded-xl"
             href="https://www.linkedin.com/in/daniel-roberto-ruiz-352990196/?trk=opento_sprofile_goalscard">
-            <LinkedinIcon class="h-4 w-4 md:h-6 md:w-6 inline-block fill-gray-100"/>
+            <LinkedinIcon class="h-5 w-5 md:h-8 md:w-8 inline-block fill-gray-100"/>
           </a>
           <a 
             target="_blank"
             class="bg-gray-100 border border-black p-2 md:p-6 rounded-xl"  
             href="https://github.com/DaniTopoo">
-            <GitHubIcon class="h-4 w-4 md:h-6 md:w-6 inline-block fill-black"/>
+            <GitHubIcon class="h-5 w-5 md:h-8 md:w-8 inline-block fill-black"/>
+          </a>
+          <a 
+            target="_blank"
+            class="bg-black border border-black p-2 md:p-6 rounded-xl"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=danitopoodev@gmail.com">
+            <EmailIcon class="h-5 w-5 md:h-8 md:w-8 inline-block fill-gray-100"/>
           </a>
         </div>
       </div>
@@ -48,6 +50,7 @@ import LinkedinIcon from "/src/components/iconics/LinkedinIcon.vue";
 import VueIcon from '/src/components/iconics/VueIcon.vue';
 import JsIcon from '/src/components/iconics/JsIcon.vue';
 import TailwindIcon from '/src/components/iconics/TailwindIcon.vue';
+import EmailIcon from "./iconics/EmailIcon.vue";
 const tecnologias = [
   {
     name: "Vue Composition API",
