@@ -1,48 +1,46 @@
 <template>
-        <div class="flex justify-between items-center">
-      <div 
-      class="m-12 flex items-center gap-6">
+  <div class="flex flex-col md:flex-row justify-between items-center p-4 md:p-12">
+    <div class="flex flex-col md:flex-row items-center gap-6">
       <img 
-      class="w-[200px] h-[200px]"
-      src="https://i.pinimg.com/236x/1c/34/f5/1c34f56f74d75590863dd8a3ae8d15a4.jpg" 
-      alt="Imagen" >
-    <div class="flex flex-col">
-        <span class="text-principal text-2xl">Hi, i'm</span>
-        <span class="font-bold text-2xl">DaniTopoo</span>
-        <span class="text-principal text-2xl">Junior FrontEnd</span>
-        <div class="mt-6">
-        <a 
-        target="_blank"
-        class="bg-black border border-black p-6 rounded-xl mr-2"
-        href="https://www.linkedin.com/in/daniel-roberto-ruiz-352990196/?trk=opento_sprofile_goalscard">
-            <LinkedinIcon class="h-6 w-6 inline-block fill-gray-100"/>
-        </a>
-        <a 
-        target="_blank"
-        class="bg-gray-100 border border-black p-6 rounded-xl"  
-        href="https://github.com/DaniTopoo">
-            <GitHubIcon class="h-6 w-6 inline-block fill-black"/>
-        </a>
-      </div>
-    </div>
-      </div>
-      <div class="mt-12">
-        <div class="grid grid-cols-2 gap-3 text-2xl gap-y-11">
-            <div
-            class="flex items-center gap-3 slide-in"
-            v-for="(tecnologia,i) in tecnologias"
-            :style="{
-                '--order': i
-            }"
-            >
-            <span>{{ tecnologia.name }}</span>
-            <component 
-            class="h-6 w-6"
-            :is="tecnologia.icon"/>
-            </div>
+        class="w-24 h-24 md:w-48 md:h-48"
+        src="https://i.pinimg.com/236x/1c/34/f5/1c34f56f74d75590863dd8a3ae8d15a4.jpg" 
+        alt="Imagen">
+      <div class="flex flex-col items-center md:items-start text-center md:text-left">
+        <span class="text-principal text-lg md:text-2xl">Hi, I'm</span>
+        <span class="font-bold text-lg md:text-2xl">DaniTopoo</span>
+        <span class="text-principal text-lg md:text-2xl">Junior FrontEnd</span>
+        <div class="mt-4 md:mt-6 flex gap-2">
+          <a 
+            target="_blank"
+            class="bg-black border border-black p-2 md:p-6 rounded-xl"
+            href="https://www.linkedin.com/in/daniel-roberto-ruiz-352990196/?trk=opento_sprofile_goalscard">
+            <LinkedinIcon class="h-4 w-4 md:h-6 md:w-6 inline-block fill-gray-100"/>
+          </a>
+          <a 
+            target="_blank"
+            class="bg-gray-100 border border-black p-2 md:p-6 rounded-xl"  
+            href="https://github.com/DaniTopoo">
+            <GitHubIcon class="h-4 w-4 md:h-6 md:w-6 inline-block fill-black"/>
+          </a>
         </div>
       </div>
     </div>
+    <div class="mt-6 md:mt-12 w-full md:w-auto flex justify-center">
+      <div class="grid grid-cols-2 gap-2 md:gap-3 text-lg md:text-2xl gap-y-4 md:gap-y-11">
+        <div
+          class="flex items-center gap-2 md:gap-3 slide-in"
+          v-for="(tecnologia, i) in tecnologias"
+          :style="{ '--order': i }"
+          :key="i"
+        >
+          <span>{{ tecnologia.name }}</span>
+          <component 
+            class="h-4 w-4 md:h-6 md:w-6"
+            :is="tecnologia.icon"/>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 <script setup>
 import GitHubIcon from "/src/components/iconics/GitHubIcon.vue";
