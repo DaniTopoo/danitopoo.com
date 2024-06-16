@@ -1,6 +1,6 @@
 
 <template>
-    <div class="h-screen w-screen overflow-hidden bg-slate-100">
+    <div class="h-screen w-screen overflow-hidden bg-slate-100 dark:bg-[#222]">
         <principal/>
     </div>
 </template>

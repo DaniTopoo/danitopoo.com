@@ -6,7 +6,7 @@ export default {
     extend: {
       colors: {
         principal:"#333333",
-        headers:"#1A237E"
+        headers:"#1A237E",
       },
     },
   },

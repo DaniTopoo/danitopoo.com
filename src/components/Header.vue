@@ -2,9 +2,9 @@
   <div class="flex flex-col md:flex-row justify-evenly items-center p-4 md:p-12 slide-in">
     <div class="flex flex-col md:flex-row items-center gap-6">
       <div class="flex flex-col items-center md:items-start text-center md:text-left">
-        <span class="text-principal text-lg md:text-2xl">Hi, I'm</span>
-        <span class="font-bold text-lg md:text-2xl">DaniTopoo</span>
-        <span class="text-principal text-lg md:text-2xl">Junior FrontEnd</span>
+        <span class="text-principal text-lg md:text-2xl dark:text-white">Hi, I'm</span>
+        <span class="font-bold text-lg md:text-2xl dark:text-gray-300">DaniTopoo</span>
+        <span class="text-principal text-lg md:text-2xl dark:text-white">Junior FrontEnd</span>
         <div class="mt-4 md:mt-6 flex gap-2">
           <a 
             target="_blank"
@@ -35,9 +35,9 @@
           :style="{ '--order': i }"
           :key="i"
         >
-          <span>{{ tecnologia.name }}</span>
+          <span class="dark:text-white">{{ tecnologia.name }}</span>
           <component 
-            class="h-4 w-4 md:h-6 md:w-6"
+            class="h-4 w-4 md:h-6 md:w-6 dark:fill-white"
             :is="tecnologia.icon"/>
         </div>
       </div>
