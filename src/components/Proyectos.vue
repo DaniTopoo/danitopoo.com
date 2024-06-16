@@ -11,7 +11,7 @@
         href="https://github.com/DaniTopoo/spotify-fullstack"
         class="bg-white rounded-lg shadow-lg p-4 md:p-8 text-center
        hover:bg-gray-200 border border-black overflow-hidden 
-       dark:hover:bg-[#444]
+       dark:hover:bg-[#888]
        dark:text-white
         slide-in increase-size w-full md:w-auto dark:bg-[#666]"
       >
