@@ -1,6 +1,6 @@
 
 <template>
-  <div :class="{ 'dark': isDarkMode }" class="h-screen w-screen overflow-hidden bg-slate-100 dark:bg-[#222]">
+  <div :class="{ 'dark': isDarkMode }" class="h-screen w-screen overflow-hidden bg-slate-100 dark:bg-[#262626]">
       <label class="switch fixed top-4 left-4">
         <span class="sun"><SunIcon/></span>
         <span class="moon"><MoonIcon/></span>
