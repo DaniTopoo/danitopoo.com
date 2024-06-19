@@ -16,7 +16,7 @@
         slide-in increase-size w-full md:w-auto dark:bg-[#404040]"
       >
         <SpotifyIcon
-          class="w-16 h-16 md:w-32 md:h-32 rounded-full mx-auto mb-4"
+          class="w-16 h-16 md:w-32 md:h-32 rounded-full mx-auto mb-4 dark:fill-white"
         />
         <h2 class="text-lg md:text-xl font-bold mb-2">Clon Spotify</h2>
         <p class="text-principal text-sm md:text-base dark:text-[#A6A6A6]
