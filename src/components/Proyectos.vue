@@ -1,10 +1,10 @@
 <template>
-  <div class="p-4">
+  <div class="p-4 flex-1">
     <div class="text-center text-2xl md:text-3xl text-principal mb-6 dark:text-white">
       PROJECTS
     </div>
     <div
-      class="flex flex-col md:flex-row flex-wrap gap-3 md:gap-6 justify-center items-center"
+      class="flex flex-col md:flex-row flex-wrap gap-3 md:gap-6 justify-center items-center max-w-xl mx-auto p-4 break-words"
     >
       <a
         target="_blank"
@@ -21,9 +21,12 @@
         <h2 class="text-lg md:text-xl font-bold mb-2">Clon Spotify</h2>
         <p class="text-principal text-sm md:text-base dark:text-[#A6A6A6]
         ">
-          Clon de Spotify aplicación web con sus funcionalidades y vistas
-          realizado con
-          <span class="font-bold text-black">Vue 3 y TailwindCSS</span>
+        I have developed a front-end clone of Spotify using <span class="text-black">Vue 3</span> and <span class="text-black">Tailwind CSS</span>. 
+        This project replicates the core functionalities and user interface of Spotify, 
+        providing a smooth and responsive user experience. The application includes features such as navigation, 
+        music playback controls, playlists,
+        all styled with the modern and flexible design system provided by Tailwind CSS.
+         
         </p>
       </a>
     </div>
