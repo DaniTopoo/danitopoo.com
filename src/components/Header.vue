@@ -28,17 +28,19 @@
       </div>
     </div>
     <div class="mt-6 md:mt-12 w-full md:w-auto flex justify-center">
-      <div class="grid grid-cols-2 gap-2 md:gap-3 text-lg md:text-2xl gap-y-4 md:gap-y-11">
+      <div class=" gap-3 md:gap-3 text-lg md:text-2xl gap-y-4 md:gap-y-11">
         <div
-          class="flex items-center gap-2 md:gap-3 slide-in"
+          class="flex flex-col items-center gap-2 md:gap-3 slide-in"
           v-for="(tecnologia, i) in tecnologias"
           :style="{ '--order': i }"
           :key="i"
         >
+        <div class="flex items-center gap-3 p-1">
           <span class="dark:text-white">{{ tecnologia.name }}</span>
           <component 
             class="h-4 w-4 md:h-6 md:w-6 dark:fill-white"
             :is="tecnologia.icon"/>
+          </div>
         </div>
       </div>
     </div>
@@ -48,6 +50,7 @@
 import GitHubIcon from "/src/components/iconics/GitHubIcon.vue";
 import LinkedinIcon from "/src/components/iconics/LinkedinIcon.vue";
 import VueIcon from '/src/components/iconics/VueIcon.vue';
+import ReactIcon from "./iconics/ReactIcon.vue";
 import JsIcon from '/src/components/iconics/JsIcon.vue';
 import TailwindIcon from '/src/components/iconics/TailwindIcon.vue';
 import EmailIcon from "./iconics/EmailIcon.vue";
@@ -69,6 +72,10 @@ const tecnologias = [
     name: "Tailwind CSS",
     icon: TailwindIcon
   },
+  {
+    name: "React",
+    icon: ReactIcon
+  }
 ];
 
 </script>

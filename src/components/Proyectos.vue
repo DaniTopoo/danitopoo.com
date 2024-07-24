@@ -1,6 +1,6 @@
 <template>
-  <div class="p-4 flex-1">
-    <div class="text-center text-2xl md:text-3xl text-principal mb-6 dark:text-white">
+  <div class="flex-1 gap-3">
+    <div class="text-center text-2xl md:text-3xl text-principal dark:text-white">
       PROJECTS
     </div>
     <div
